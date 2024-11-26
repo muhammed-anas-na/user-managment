@@ -1,0 +1,33 @@
+<div class="min-h-screen flex items-center justify-center px-4">
+  <div class="max-w-md w-full bg-white rounded-lg shadow-lg p-8">
+    <div class="flex items-center mb-8">
+      <button (click)="goBackToPreviosPage()" class="text-gray-600 hover:text-gray-900">←</button>
+      <h1 class="text-2xl font-bold ml-4">Verification</h1>
+    </div>
+    <p class="mb-6">We Have Sent Otp To The Entered Mail Id</p>
+    <form (ngSubmit)="onSubmit()" class="space-y-6" [formGroup]="otpForm">
+      <div class="flex gap-2">
+        <input formControlName="value01" type="text" maxlength="1"
+          class="w-14 h-14 text-center border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+        <input formControlName="value02" type="text" maxlength="1"
+          class="w-14 h-14 text-center border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+        <input formControlName="value03" type="text" maxlength="1"
+          class="w-14 h-14 text-center border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+        <input formControlName="value04" type="text" maxlength="1"
+          class="w-14 h-14 text-center border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+      </div>
+      <div class="flex justify-between items-center">
+        <span class="text-gray-500">02:02</span>
+        <button type="button" class="text-blue-600 hover:underline">Resend</button>
+      </div>
+      <span *ngIf="error" class="text-xs text-red-700">{{error}}</span>
+      <button 
+        [disabled]="loading"
+        type="submit" 
+        class="w-full bg-blue-800 text-white py-2 rounded-md hover:bg-blue-900 transition-colors">
+        <span *ngIf="loading">Loading...</span>
+        <span *ngIf="!loading">Verify</span>
+      </button>
+    </form>
+  </div>
+</div>

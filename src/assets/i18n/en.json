@@ -1,0 +1,37 @@
+{
+    "LOGIN": {
+      "WELCOME": "Welcome",
+      "EMAIL_PLACEHOLDER": "Email",
+      "PASSWORD_PLACEHOLDER": "Password",
+      "REMEMBER_ME": "Remember Me",
+      "FORGOT_PASSWORD": "Forgot Password",
+      "CONTINUE": "Continue",
+      "NO_ACCOUNT": "Don't Have An Account?",
+      "SIGN_UP": "Sign Up",
+      "VALIDATION": {
+        "EMAIL_REQUIRED": "Email is required",
+        "EMAIL_INVALID": "Enter a valid email address",
+        "PASSWORD_REQUIRED": "Password is required",
+        "PASSWORD_LENGTH": "Password must be at least 6 characters"
+      }
+    },
+    "SIGNUP": {
+      "TITLE": "Sign up",
+      "NAME_PLACEHOLDER": "Name",
+      "EMAIL_PLACEHOLDER": "Email",
+      "PASSWORD_PLACEHOLDER": "Password",
+      "CONFIRM_PASSWORD": "Confirm Password",
+      "TERMS": "I Accept The Terms And Condition",
+      "CONTINUE": "Continue",
+      "VALIDATION": {
+        "NAME_REQUIRED": "Name is required",
+        "NAME_LENGTH": "Name must be at least 3 characters",
+        "EMAIL_REQUIRED": "Email is required",
+        "EMAIL_INVALID": "Enter a valid email address",
+        "PASSWORD_REQUIRED": "Password is required",
+        "PASSWORD_LENGTH": "Password must be at least 6 characters",
+        "CONFIRM_PASSWORD_REQUIRED": "Confirm password is required",
+        "PASSWORD_MISMATCH": "Passwords do not match"
+      }
+    }
+  }

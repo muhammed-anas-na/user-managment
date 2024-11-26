@@ -1,0 +1,38 @@
+{
+    "LOGIN": {
+      "WELCOME": "مرحبًا",
+      "EMAIL_PLACEHOLDER": "البريد الإلكتروني",
+      "PASSWORD_PLACEHOLDER": "كلمة المرور",
+      "REMEMBER_ME": "تذكرني",
+      "FORGOT_PASSWORD": "نسيت كلمة المرور؟",
+      "CONTINUE": "متابعة",
+      "NO_ACCOUNT": "ليس لديك حساب؟",
+      "SIGN_UP": "إنشاء حساب",
+      "VALIDATION": {
+        "EMAIL_REQUIRED": "البريد الإلكتروني مطلوب",
+        "EMAIL_INVALID": "أدخل بريدًا إلكترونيًا صالحًا",
+        "PASSWORD_REQUIRED": "كلمة المرور مطلوبة",
+        "PASSWORD_LENGTH": "يجب أن تكون كلمة المرور مكونة من 6 أحرف على الأقل"
+      }
+    },
+    "SIGNUP": {
+      "TITLE": "إنشاء حساب",
+      "NAME_PLACEHOLDER": "الاسم",
+      "EMAIL_PLACEHOLDER": "البريد الإلكتروني",
+      "PASSWORD_PLACEHOLDER": "كلمة المرور",
+      "CONFIRM_PASSWORD": "تأكيد كلمة المرور",
+      "TERMS": "أوافق على الشروط والأحكام",
+      "CONTINUE": "متابعة",
+      "VALIDATION": {
+        "NAME_REQUIRED": "الاسم مطلوب",
+        "NAME_LENGTH": "يجب أن يكون الاسم مكونًا من 3 أحرف على الأقل",
+        "EMAIL_REQUIRED": "البريد الإلكتروني مطلوب",
+        "EMAIL_INVALID": "أدخل بريدًا إلكترونيًا صالحًا",
+        "PASSWORD_REQUIRED": "كلمة المرور مطلوبة",
+        "PASSWORD_LENGTH": "يجب أن تكون كلمة المرور مكونة من 6 أحرف على الأقل",
+        "CONFIRM_PASSWORD_REQUIRED": "تأكيد كلمة المرور مطلوب",
+        "PASSWORD_MISMATCH": "كلمتا المرور غير متطابقتين"
+      }
+    }
+  }
+  
