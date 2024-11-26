@@ -32,6 +32,7 @@ export class AppComponent implements OnInit {
     const currentUrl = this.router.url;
     if (currentUrl === '/' || !currentUrl.includes('/theme')) {
       this.router.navigate([`/login/${savedTheme}/${savedLang}`]);
+
     }
 
     // Subscribe to route changes

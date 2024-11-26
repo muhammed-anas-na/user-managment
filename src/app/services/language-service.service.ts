@@ -2,12 +2,14 @@ import { Injectable, PLATFORM_ID, inject } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { BehaviorSubject } from 'rxjs';
 import { isPlatformBrowser } from '@angular/common';
+import { Router } from '@angular/router';
 
 @Injectable({
   providedIn: 'root'
 })
 export class LanguageService {
   private platformId = inject(PLATFORM_ID);
+  private router = inject(Router);
   private currentLang = new BehaviorSubject<string>(this.getStorageItem('language', 'en'));
   currentLang$ = this.currentLang.asObservable();
 
@@ -18,6 +20,7 @@ export class LanguageService {
   }
 
   setLanguage(lang: string) {
+    // First set the language
     this.translate.use(lang);
     this.currentLang.next(lang);
     if (isPlatformBrowser(this.platformId)) {
@@ -25,6 +28,10 @@ export class LanguageService {
       document.documentElement.lang = lang;
       document.documentElement.dir = this.isRTL(lang) ? 'rtl' : 'ltr';
     }
+    const currentUrl = this.router.url;
+    const urlParts = currentUrl.split('/');
+    urlParts[urlParts.length - 1] = lang;  // Replace the last segment with new language
+    this.router.navigate(urlParts);
   }
 
   getCurrentLang(): string {

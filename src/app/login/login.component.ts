@@ -30,7 +30,7 @@ export class LoginComponent {
       
       this._authService.loginUser(this.loginForm.value).subscribe((response) => {
         console.log('Signup successful', response);
-        this._router.navigate(['/dashboard'])
+        this._router.navigate(['/dashboard/',])
       },
       (error) => {
         console.error('Signup failed', error);
